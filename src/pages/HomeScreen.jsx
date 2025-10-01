@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import CarouselApp from '../components/CarouselApp'
 
 const apiUrl = `${import.meta.env.VITE_URL_SERVER}`
 
@@ -16,7 +17,9 @@ const HomeScreen = () => {
         .catch(() => console.log("error al traer productos"))
     }
   return (
-    <div>HomeScreen</div>
+    <div>
+      <CarouselApp />
+    </div>
   )
 }
 

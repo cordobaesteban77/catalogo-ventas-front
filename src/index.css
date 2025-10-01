@@ -5,3 +5,18 @@ body {
 nav {
   background-color: #FF0000;
 }
+
+.carousel-container {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.carousel-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-carousel {
+  height: 100%;
+}
