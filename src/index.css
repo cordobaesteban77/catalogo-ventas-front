@@ -28,3 +28,11 @@ nav {
 .text-color {
   color: #FF0000;
 }
+
+.card-custom {
+  width: 18rem;
+}
+
+.img-card-custom {
+  height: 16rem;
+}

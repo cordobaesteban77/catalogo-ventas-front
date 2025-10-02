@@ -13,8 +13,7 @@ const HomeScreen = () => {
     }, [])
     
     const getProducts = () => {
-        axios.get(`${apiUrl}/products`).then((res) => { setProducts(res.data.products || [])
-        console.log(res.data.products)})
+        axios.get(`${apiUrl}/products`).then((res) => setProducts(res.data.products || []))
         .catch(() => console.log("error al traer productos"))
     }
   return (
