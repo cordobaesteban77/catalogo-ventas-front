@@ -36,3 +36,13 @@ nav {
 .img-card-custom {
   height: 16rem;
 }
+
+.btn-custom {
+  color: white;
+  background-color: #FF0000;
+}
+
+.btn-custom:hover {
+  color: white;
+  background-color: #FF4D00;
+}
