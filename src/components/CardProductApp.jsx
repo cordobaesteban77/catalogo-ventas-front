@@ -10,6 +10,7 @@ const CardProductApp = (props) => {
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">{category}</p>
+                <p className="card-text">${price}</p>
                 <a href="#" className="btn btn-custom">Ver más</a>
             </div>
         </div>

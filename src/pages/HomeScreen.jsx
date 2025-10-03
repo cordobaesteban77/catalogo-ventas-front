@@ -32,7 +32,11 @@ const HomeScreen = () => {
                 <CardProductApp key={product._id} product={product}/>
               ))
             }
-          </div> : <p className='text-color'>cargando...</p>
+          </div> : <div class="text-center">
+                    <div class="spinner-border text-color" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
         }
       </div>
     </div>
