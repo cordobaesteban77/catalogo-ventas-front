@@ -16,22 +16,22 @@ const CarouselApp = () => {
                 <div className="carousel-item carousel-container active">
                 <img src={img1} className="d-block w-100" alt="imagen del carousel"/>
                 <div className="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>EZ Market</h5>
+                    <p>Lo mejor en tecnología.</p>
                 </div>
                 </div>
                 <div className="carousel-item carousel-container">
                 <img src={img2} className="d-block w-100" alt="imagen del carousel"/>
                 <div className="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>EZ Market</h5>
+                    <p>Precios competitivos.</p>
                 </div>
                 </div>
                 <div className="carousel-item carousel-container">
                 <img src={img3} className="d-block w-100" alt="imagen del carousel"/>
                 <div className="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>EZ Market</h5>
+                    <p>Calidad garantizada.</p>
                 </div>
                 </div>
             </div>
