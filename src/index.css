@@ -5,3 +5,44 @@ body {
 nav {
   background-color: #FF0000;
 }
+
+.carousel-container {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.carousel-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-carousel {
+  height: 100%;
+}
+
+.title-text-color {
+  color: #FF0000;
+}
+
+.text-color {
+  color: #FF0000;
+}
+
+.card-custom {
+  width: 18rem;
+}
+
+.img-card-custom {
+  height: 16rem;
+}
+
+.btn-custom {
+  color: white;
+  background-color: #FF0000;
+}
+
+.btn-custom:hover {
+  color: white;
+  background-color: #FF4D00;
+}
