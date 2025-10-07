@@ -46,3 +46,37 @@ nav {
   color: white;
   background-color: #FF4D00;
 }
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.custom-icon {
+  font-size: 23px;
+  transition: all 0.20s linear;
+}
+
+.custom-icon:hover {
+  font-size: 26px;
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.btn-up a {
+  color: #FF0000;
+}
+
+.btn-wp {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+}
+
+.btn-wp a {
+  color: #FF0000;
+}
