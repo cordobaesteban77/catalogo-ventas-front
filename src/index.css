@@ -29,6 +29,10 @@ nav {
   color: #FF0000;
 }
 
+.text-pill {
+  background-color: #FF0000;
+}
+
 .card-custom {
   width: 18rem;
 }

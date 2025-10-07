@@ -9,7 +9,7 @@ const CardProductApp = (props) => {
             <img src={`${import.meta.env.VITE_URL_SERVER}/public/${image}`} className="card-img-top img-card-custom" alt={name}/>
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
-                <p className="card-text">{category}</p>
+                <span className="badge rounded-pill text-pill">{category}</span>
                 <p className="card-text">${price}</p>
                 <a href="#" className="btn btn-custom">Ver más</a>
             </div>
