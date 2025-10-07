@@ -52,6 +52,11 @@ footer a {
   text-decoration: none;
 }
 
+.custom-icon {
+  font-size: 23px;
+  transition: all 0.20s linear;
+}
+
 .custom-icon:hover {
-  width: 50px;
+  font-size: 26px;
 }
