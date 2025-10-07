@@ -46,3 +46,12 @@ nav {
   color: white;
   background-color: #FF4D00;
 }
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.custom-icon:hover {
+  width: 50px;
+}
