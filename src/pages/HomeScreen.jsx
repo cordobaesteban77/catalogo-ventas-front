@@ -17,7 +17,7 @@ const HomeScreen = () => {
         .catch(() => console.log("error al traer productos"))
     }
   return (
-    <div>
+    <div id='inicio'>
       <CarouselApp />
       <div className="container">
         <div className="row">
@@ -32,12 +32,18 @@ const HomeScreen = () => {
                 <CardProductApp key={product._id} product={product}/>
               ))
             }
-          </div> : <div class="text-center">
-                    <div class="spinner-border text-color" role="status">
-                      <span class="visually-hidden">Loading...</span>
+          </div> : <div className="text-center">
+                    <div className="spinner-border text-color" role="status">
+                      <span className="visually-hidden">Loading...</span>
                     </div>
                   </div>
         }
+      </div>
+      <div className='btn-wp'>
+        <a href="tel: +5493816463774"><i className="bi bi-whatsapp text-success fs-3"></i></a>
+      </div>
+      <div className='btn-up'>
+        <a href="#inicio"><i className="bi bi-arrow-up-circle-fill fs-3"></i></a>
       </div>
     </div>
   )
