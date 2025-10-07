@@ -17,7 +17,7 @@ const HomeScreen = () => {
         .catch(() => console.log("error al traer productos"))
     }
   return (
-    <div>
+    <div id='inicio'>
       <CarouselApp />
       <div className="container">
         <div className="row">
@@ -38,6 +38,12 @@ const HomeScreen = () => {
                     </div>
                   </div>
         }
+      </div>
+      <div className='btn-wp'>
+        <a href="tel: +5493816463774"><i className="bi bi-whatsapp text-success fs-3"></i></a>
+      </div>
+      <div className='btn-up'>
+        <a href="#inicio"><i className="bi bi-arrow-up-circle-fill fs-3"></i></a>
       </div>
     </div>
   )
