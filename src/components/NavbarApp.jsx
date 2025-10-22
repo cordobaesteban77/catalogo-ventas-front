@@ -36,7 +36,9 @@ const NavbarApp = () => {
               </a>
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item" to="/smartphones">Celulares</Link></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
+                <li><Link className="dropdown-item" to="/PlacasDeVideo">Placas de video</Link></li>
+                <li><Link className="dropdown-item" to="/Procesadores">Procesadores</Link></li>
+                <li><Link className="dropdown-item" to="/Mothers">Mothers</Link></li>
                 <li><hr className="dropdown-divider" /></li>
                 <li><a className="dropdown-item" href="#">Something else here</a></li>
               </ul>
