@@ -6,21 +6,23 @@ import CardProductApp from '../components/CardProductApp'
 const apiUrl = `${import.meta.env.VITE_URL_SERVER}`
 
 const SmartphoneScreen = () => {
-        //algoritmo
-        //datos de entrada: productos
-        //A1: traer productos ✅
-        //A2: si categoria de producto = smarphones entonces A3, sino mostrar mensaje
-        //A3: mostrar productos
-        // parar
         const [products, setProducts] = useState([])
+        const [loading, setLoading] = useState(true)
 
         useEffect(() => {
           getProducts()
         }, [])
 
         const getProducts = () => {
-            axios.get(`${apiUrl}/products`).then((res) => setProducts(res.data.products || [])).catch(() => console.log("error al traer los productos"))
+            setLoading(true)
+            axios.get(`${apiUrl}/products`)
+              .then((res) => setProducts(res.data.products || []))
+              .catch(() => console.log("error al traer los productos"))
+              .finally(() => setLoading(false))
         }
+
+        // Filtrar productos de la categoría Smartphone
+        const smartphoneProducts = products.filter(product => product.category === "celulares")
         
   return (
     <div id='inicio'>
@@ -32,17 +34,29 @@ const SmartphoneScreen = () => {
         </div>
       </div>
       {
-        products.length > 0 ? <div className="row">
-          {
-            products.filter(product => product.category === "Smartphone").map((product) => (
-                <CardProductApp key={product._id} product={product} />
-            ))
-          }
-        </div> : <div className="text-center">
-                  <div className="spinner-border text-color" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                  </div>
-                </div>
+        loading ? (
+          <div className="text-center">
+            <div className="spinner-border text-color" role="status">
+              <span className="visually-hidden">Cargando productos...</span>
+            </div>
+            <p className="mt-2">Cargando productos...</p>
+          </div>
+        ) : smartphoneProducts.length > 0 ? (
+          <div className="row">
+            {smartphoneProducts.map((product) => (
+              <CardProductApp key={product._id} product={product} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center text-color">
+            <div className="alert" role="alert">
+              <h4 className="alert-heading">Sin stock disponible</h4>
+              <p>No hay productos de esta categoría disponibles en este momento.</p>
+              <hr />
+              <p className="mb-0">¡Pronto tendremos nuevos celulares en stock!</p>
+            </div>
+          </div>
+        )
       }
     </div>
     <div className='btn-wp'>
