@@ -39,6 +39,11 @@ const NavbarApp = () => {
                 <li><Link className="dropdown-item" to="/PlacasDeVideo">Placas de video</Link></li>
                 <li><Link className="dropdown-item" to="/Procesadores">Procesadores</Link></li>
                 <li><Link className="dropdown-item" to="/Mothers">Mothers</Link></li>
+                <li><Link className="dropdown-item" to="/Notebooks">Notebooks</Link></li>
+                <li><Link className="dropdown-item" to="/MemoriasRam">Memorias ram</Link></li>
+                <li><Link className="dropdown-item" to="/FuentesDeAlimentacion">Fuentes de alimentacion</Link></li>
+                <li><Link className="dropdown-item" to="/Perifericos">Perifericos</Link></li>
+                <li><Link className="dropdown-item" to="/Gabinetes">Gabinetes</Link></li>
                 <li><hr className="dropdown-divider" /></li>
                 <li><a className="dropdown-item" href="#">Something else here</a></li>
               </ul>
