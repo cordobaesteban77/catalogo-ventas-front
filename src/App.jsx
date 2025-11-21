@@ -12,6 +12,7 @@ import RamMemoryScreen from './pages/RamMemoryScreen'
 import PowerSuppliesScreen from './pages/PowerSuppliesScreen'
 import PeripheralsScreen from './pages/PeripheralsScreen'
 import CasesScreen from './pages/CasesScreen'
+import CrudProducstApp from './components/CrudProductsApp'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/FuentesDeAlimentacion' element={<PowerSuppliesScreen />} />
         <Route path='/Perifericos' element={<PeripheralsScreen />} />
         <Route path='/Gabinetes' element={<CasesScreen />} />
+        <Route path='/crud' element={<CrudProducstApp />} />
       </Routes>
       <FooterApp />
     </BrowserRouter>
