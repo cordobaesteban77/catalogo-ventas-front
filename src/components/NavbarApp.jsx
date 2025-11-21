@@ -49,7 +49,7 @@ const NavbarApp = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
+            <Link className="nav-link active" aria-current="page" to="/crud">CRUD</Link>
             </li>
           </ul>
         </div>
